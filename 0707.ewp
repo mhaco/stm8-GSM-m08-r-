@@ -479,7 +479,7 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>2</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
@@ -606,7 +606,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>lnk0t.icf</state>
+                    <state>$TOOLKIT_DIR$\config\lnkstm8l051f3.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -670,7 +670,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state></state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -1636,97 +1636,7 @@
         </settings>
     </configuration>
     <group>
-        <name>StdPeriph_Driver</name>
-    </group>
-    <group>
         <name>STM8L15x_StdPeriph_Driver</name>
-        <group>
-            <name>inc</name>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_adc.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_aes.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_beep.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_clk.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_comp.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_dac.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_dma.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_exti.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_flash.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_gpio.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_i2c.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_irtim.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_itc.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_iwdg.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_lcd.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_pwr.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_rst.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_rtc.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_spi.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_syscfg.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim1.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim2.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim3.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim4.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim5.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_usart.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_wfe.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_wwdg.h</name>
-            </file>
-        </group>
     </group>
     <group>
         <name>User</name>
@@ -1737,13 +1647,25 @@
             <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\src\stm8l15x_clk.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\inc\stm8l15x_clk.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\stm8l15x_conf.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\src\stm8l15x_gpio.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\stm8l15x_it.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\stm8l15x_it.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STM8L15x_StdPeriph_Driver\src\stm8l15x_usart.c</name>
         </file>
     </group>
 </project>
